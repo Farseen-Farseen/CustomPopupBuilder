@@ -1,0 +1,17 @@
+{
+    "custom_popup_table": {
+        "column": {
+            "id": true,
+            "name": true,
+            "title": true,
+            "display": true,
+            "storeview": true,
+            "customer_groups": true,
+            "priority": true,
+            "status": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

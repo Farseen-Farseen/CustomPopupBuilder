@@ -1,0 +1,22 @@
+<?xml version = "1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="custom_popup_table" resource="default" engine="innodb" comment="Popup table">
+        <column xsi:type="smallint" name="id" padding="6" unsigned="false" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="name" nullable="false" length="25" comment="name"/>
+        <column xsi:type="varchar" name="title" nullable="false" length="25" comment="title"/>
+        <column xsi:type="varchar" name="display" nullable="false" length="255" comment="display"/>
+        <column xsi:type="varchar" name="storeview" nullable="false" length="255" comment="storeview"/>
+        <column xsi:type="varchar" name="customer_groups" nullable="false" length="255" comment="customer_groups"/>
+        <column xsi:type="varchar" name="priority" nullable="false" length="255" comment="priority"/>
+        <column xsi:type="varchar" name="status" nullable="false" length="255" comment="status"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>

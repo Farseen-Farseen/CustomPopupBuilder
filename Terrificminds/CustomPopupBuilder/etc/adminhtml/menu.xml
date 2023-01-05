@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+      <add id="Terrificminds_CustomPopupBuilder::custombuilder" title="Custom Popup Builder" translate="title" module="Terrificminds_CustomPopupBuilder" parent="Magento_Backend::content" sortOrder="50" dependsOnModule="Terrificminds_CustomPopupBuilder" resource="Terrificminds_CustomPopupBuilder::custombuilder"/>
+      <add id="Terrificminds_CustomPopupBuilder::popup" title="Popup" translate="title" module="Terrificminds_CustomPopupBuilder" parent="Terrificminds_CustomPopupBuilder::custombuilder" sortOrder="10" dependsOnModule="Terrificminds_CustomPopupBuilder" action="custompopupbuilder/index/index" resource="Terrificminds_CustomPopupBuilder::custombuilder"/>
+    </menu>
+</config>
