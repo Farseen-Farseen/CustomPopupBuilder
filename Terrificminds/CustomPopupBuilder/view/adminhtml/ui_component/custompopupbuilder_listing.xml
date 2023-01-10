@@ -14,7 +14,7 @@
     <settings>
         <buttons>
             <button name="add">
-                <url path="*/*/new"/>
+                <url path="custompopupbuilder/index/button"/>
                 <class>primary</class>
                 <label translate="true">Add New Popup</label>
             </button>
@@ -98,25 +98,11 @@
                 <resizeDefaultWidth>25</resizeDefaultWidth>
             </settings>
         </column>
-        <column name="name">
-            <settings>
-                <filter>text</filter>
-                <bodyTmpl>ui/grid/cells/text</bodyTmpl>
-                <label translate="true">Name</label>
-            </settings>
-        </column>
         <column name="title">
             <settings>
                 <filter>text</filter>
                 <bodyTmpl>ui/grid/cells/text</bodyTmpl>
                 <label translate="true">Title</label>
-            </settings>
-        </column>
-        <column name="display">
-            <settings>
-                <filter>text</filter>
-                <bodyTmpl>ui/grid/cells/text</bodyTmpl>
-                <label translate="true">Display On</label>
             </settings>
         </column>
         <column name="storeview">
@@ -133,18 +119,60 @@
                 <label translate="true">Customer Groups</label>
             </settings>
         </column>
+        <column name="content_heading">
+            <settings>
+                <filter>text</filter>
+                <bodyTmpl>ui/grid/cells/text</bodyTmpl>
+                <label translate="true">Content Heading</label>
+            </settings>
+        </column>
+        <column name="content">
+            <settings>
+                <filter>text</filter>
+                <bodyTmpl>ui/grid/cells/text</bodyTmpl>
+                <label translate="true">Content</label>
+            </settings>
+        </column>
+        <column name="creation_time">
+            <settings>
+                <filter>text</filter>
+                <bodyTmpl>ui/grid/cells/text</bodyTmpl>
+                <label translate="true">Creation Time</label>
+            </settings>
+        </column>
+        <column name="update_time">
+            <settings>
+                <filter>text</filter>
+                <bodyTmpl>ui/grid/cells/text</bodyTmpl>
+                <label translate="true">Update Time</label>
+            </settings>
+        </column>
+        <column name="is_active">
+            <settings>
+                <filter>text</filter>
+                <bodyTmpl>ui/grid/cells/text</bodyTmpl>
+                <label translate="true">Status</label>
+            </settings>
+        </column>
+        <column name="from_date">
+            <settings>
+                <filter>text</filter>
+                <bodyTmpl>ui/grid/cells/text</bodyTmpl>
+                <label translate="true">From date</label>
+            </settings>
+        </column>
+        <column name="to_date">
+            <settings>
+                <filter>text</filter>
+                <bodyTmpl>ui/grid/cells/text</bodyTmpl>
+                <label translate="true">To date</label>
+            </settings>
+        </column>
         <column name="priority">
             <settings>
                 <filter>text</filter>
                 <bodyTmpl>ui/grid/cells/text</bodyTmpl>
                 <label translate="true">Priority</label>
-            </settings>
-        </column>
-        <column name="status">
-            <settings>
-                <filter>text</filter>
-                <bodyTmpl>ui/grid/cells/text</bodyTmpl>
-                <label translate="true">Status</label>
             </settings>
         </column>
         <actionsColumn name="actions" class="Terrificminds\CustomPopupBuilder\Ui\Component\Listing\Column\FormActions"  sortOrder="200">

@@ -1,15 +1,19 @@
 <?php
-
-declare(strict_types=1);
-
-namespace Terrificminds\CustomPopupBuilder\Controller\Adminhtml\Index\Button;
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+namespace Terrificminds\CustomPopupBuilder\Block\Adminhtml\Index\Add\Button;
 
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;
 
+/**
+ * Class Back
+ */
 class Back extends Generic implements ButtonProviderInterface
 {
     /**
-     * Get button data
+     * Get Button Data
      *
      * @return array
      */
@@ -19,15 +23,15 @@ class Back extends Generic implements ButtonProviderInterface
             'label' => __('Back'),
             'on_click' => sprintf("location.href = '%s';", $this->getBackUrl()),
             'class' => 'back',
-            'sort_order' => 10,
+            'sort_order' => 10
         ];
     }
     /**
-     * Get URL for back (reset) button
+     * Get URL for back
      *
      * @return string
      */
-    public function getBackUrl()
+    private function getBackUrl()
     {
         return $this->getUrl('*/*/');
     }

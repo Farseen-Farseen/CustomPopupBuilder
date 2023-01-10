@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Terrificminds\CustomPopupBuilder\Controller\Adminhtml\Index\Button;
+namespace Terrificminds\CustomPopupBuilder\Block\Adminhtml\Index\Add\Button;
 
 use Magento\Backend\Block\Widget\Context;
 

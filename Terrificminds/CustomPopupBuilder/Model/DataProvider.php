@@ -1,10 +1,10 @@
-    <?php
+<?php
 
-    declare(strict_types=1);
+declare(strict_types=1);
 
-    namespace Terrificminds\CustomPopupBuilder\Model;
+namespace Terrificminds\CustomPopupBuilder\Model;
 
-    use Terrificminds\CustomPopupBuilder\Model\ResourceModel\CustomPopupBuilder\CollectionFactory;
+use Terrificminds\CustomPopupBuilder\Model\ResourceModel\CustomPopupBuilder\CollectionFactory;
 
     class DataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
     {

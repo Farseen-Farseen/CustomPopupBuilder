@@ -2,13 +2,17 @@
     "custom_popup_table": {
         "column": {
             "id": true,
-            "name": true,
             "title": true,
-            "display": true,
             "storeview": true,
             "customer_groups": true,
-            "priority": true,
-            "status": true
+            "content_heading": true,
+            "content": true,
+            "creation_time": true,
+            "update_time": true,
+            "is_active": true,
+            "from": true,
+            "to": true,
+            "priority": true
         },
         "constraint": {
             "PRIMARY": true
